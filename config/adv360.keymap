@@ -14,12 +14,12 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <800>;
-            quick_tap_ms = <175>;
+            tapping-term-ms = <270>;
+            quick_tap_ms = <0>;
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
 
-            require-prior-idle-ms = <125>;
+            require-prior-idle-ms = <0>;
         };
 
         tap_dance: tap_dance {
@@ -58,7 +58,7 @@
 &kp EQUAL   &kp N1            &kp N2              &kp N3          &kp N4          &kp N5  &tog 1                                                                  &mo 3      &kp N6  &kp N7           &kp N8           &kp N9               &kp N0                &kp MINUS
 &kp ESCAPE  &kp Q             &kp W               &kp E           &kp R           &kp T   &none                                                                   &none      &kp Y   &kp U            &kp I            &kp O                &kp P                 &kp BSLH
 &kp TAB     &hm LEFT_SHIFT A  &hm LEFT_CONTROL S  &hm LEFT_ALT D  &hm LEFT_GUI F  &kp G   &none     &kp LCTRL     &kp LALT      &kp RIGHT_CONTROL  &kp RIGHT_GUI  &none      &kp H   &hm RIGHT_GUI J  &hm RIGHT_ALT K  &hm RIGHT_CONTROL L  &hm RIGHT_SHIFT SEMI  &kp SQT
-&tap_dance  &kp Z             &kp X               &kp C           &kp V           &kp B                           &kp HOME      &kp PG_UP                                    &kp N   &kp M            &kp COMMA        &kp DOT              &kp FSLH              &kp RSHFT
+&kp  &kp Z             &kp X               &kp C           &kp V           &kp B                           &kp HOME      &kp PG_UP                                    &kp N   &kp M            &kp COMMA        &kp DOT              &kp FSLH              &kp RSHFT
 &mo 2       &kp GRAVE         &kp CAPS            &kp LEFT        &kp RIGHT               &kp BSPC  &kp LEFT_GUI  &kp END       &kp PG_DN          &kp ENTER      &kp SPACE          &kp UP           &kp DOWN         &kp LBKT             &kp RBKT              &mo 2
             >;
         };
