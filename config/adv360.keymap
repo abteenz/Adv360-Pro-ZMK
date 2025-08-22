@@ -14,10 +14,38 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <400>;
             quick_tap_ms = <175>;
-            flavor = "tap-preferred";
+            flavor = "balanced";
             bindings = <&kp>, <&kp>;
+
+            require-prior-idle-ms = <125>;
+        };
+
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-tap-dance";
+            label = "tap_dance";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT>, <&caps_word>;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        all {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <66 35 36 46>;
+            layers = <0>;
+        };
+    };
+
+    macros {
+        abtin_first_macro: abtin_first_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "ABTIN_FIRST_MACRO";
         };
     };
 
@@ -27,11 +55,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2    &kp N3    &kp N4             &kp N5  &tog 1                                                   &mo 3      &kp N6  &kp N7  &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB    &kp Q      &kp W     &kp E     &kp R              &kp T   &none                                                    &none      &kp Y   &kp U   &kp I      &kp O     &kp P     &kp BSLH
-&kp ESC    &kp A      &kp S     &kp D     &hm EXCLAMATION F  &kp G   &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &kp J   &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z      &kp X     &kp C     &kp V              &kp B                        &kp HOME      &kp PG_UP                        &kp N   &kp M   &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 2      &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT                  &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP  &kp DOWN   &kp LBKT  &kp RBKT  &mo 2
+&kp EQUAL      &kp N1     &kp N2              &kp N3          &kp N4          &kp N5  &tog 1                                                      &mo 3      &kp N6  &kp N7           &kp N8           &kp N9               &kp N0    &kp MINUS
+&kp ESCAPE     &kp Q      &kp W               &kp E           &kp R           &kp T   &none                                                       &none      &kp Y   &kp U            &kp I            &kp O                &kp P     &kp BSLH
+&kp TAB        &kp A      &hm LEFT_CONTROL S  &hm LEFT_ALT D  &hm LEFT_GUI F  &kp G   &none     &kp LCTRL     &kp LALT      &kp LGUI   &kp RCTRL  &none      &kp H   &hm RIGHT_GUI J  &hm RIGHT_ALT K  &hm RIGHT_CONTROL L  &kp SEMI  &kp SQT
+&new_behavior  &kp Z      &kp X               &kp C           &kp V           &kp B                           &kp HOME      &kp PG_UP                        &kp N   &kp M            &kp COMMA        &kp DOT              &kp FSLH  &kp RSHFT
+&mo 2          &kp GRAVE  &kp CAPS            &kp LEFT        &kp RIGHT               &kp BSPC  &kp LEFT_GUI  &kp END       &kp PG_DN  &kp ENTER  &kp SPACE          &kp UP           &kp DOWN         &kp LBKT             &kp RBKT  &mo 2
             >;
         };
 
