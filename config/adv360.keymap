@@ -87,6 +87,11 @@
             bindings = <&kp AT>;
             key-positions = <16 17>;
         };
+
+        underscore {
+            bindings = <&kp UNDER>;
+            key-positions = <26 25>;
+        };
     };
 
     macros {
