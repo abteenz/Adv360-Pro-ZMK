@@ -88,14 +88,14 @@
             key-positions = <16 17>;
         };
 
-        dash {
-            bindings = <&kp UNDER>;
-            key-positions = <26 25>;
-        };
-
         underscore {
             bindings = <&kp UNDERSCORE>;
             key-positions = <44 43>;
+        };
+
+        dash {
+            bindings = <&kp MINUS>;
+            key-positions = <26 25>;
         };
     };
 
