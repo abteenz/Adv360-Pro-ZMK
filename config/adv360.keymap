@@ -108,36 +108,37 @@
 
         underscore {
             bindings = <&kp UNDERSCORE>;
-            key-positions = <44 43>;
+            key-positions = <44 29>;
         };
 
         dash {
             bindings = <&kp MINUS>;
-            key-positions = <29 30>;
+            key-positions = <30 43>;
         };
 
         colon {
             bindings = <&kp COLON>;
-            key-positions = <42 41>;
+            key-positions = <41 32>;
         };
 
         que {
             bindings = <&kp QUESTION>;
-            key-positions = <32 41>;
+            key-positions = <40 33>;
         };
 
         semi {
             bindings = <&kp SEMI>;
-            key-positions = <31 32>;
+            key-positions = <31 42>;
         };
-    };
 
-    macros {
-        abtin_first_macro: abtin_first_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none>;
-            label = "ABTIN_FIRST_MACRO";
+        parant {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <22 23>;
+        };
+
+        rightparan {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <23 24>;
         };
     };
 
@@ -147,11 +148,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL       &kp N1             &kp N2                   &kp N3           &kp N4           &kp N5  &tog 1                                                                             &mo 3      &kp N6  &kp N7            &kp N8            &kp N9                &kp N0              &kp MINUS
-&kp ESCAPE      &kp Q              &kp W                    &kp E            &kp R            &kp T   &none                                                                              &none      &kp Y   &kp U             &kp I             &kp O                 &kp SEMI            &kp BSLH
-&kp TAB         &hml LEFT_SHIFT A  &hml LEFT_CONTROL S      &hml LEFT_ALT D  &hml LEFT_GUI F  &kp G   &none     &momonum 4 LEFT_CONTROL  &kp LALT      &kp RIGHT_CONTROL  &kp RIGHT_GUI  &none      &kp H   &hmr RIGHT_GUI J  &hmr RIGHT_ALT K  &hmr RIGHT_CONTROL L  &hmr RIGHT_SHIFT P  &kp SQT
-&kp LEFT_SHIFT  &kp Z              &kp X                    &momonum 1 C     &kp V            &kp B                                      &kp HOME      &kp PG_UP                                    &kp N   &kp M             &kp COMMA         &kp DOT               &kp FSLH            &kp RSHFT
-&mo 2           &kp GRAVE          &momonum 4 LEFT_COMMAND  &kp LEFT         &kp RIGHT                &kp BSPC  &kp TAB                  &kp END       &kp PG_DN          &kp ENTER      &kp SPACE          &kp UP            &kp DOWN          &kp LBKT              &kp RBKT            &mo 2
+&kp EQUAL       &kp N1             &kp N2                &kp N3           &kp N4           &kp N5  &tog 1                                                                              &mo 3      &kp N6  &kp N7            &kp N8            &kp N9                &kp N0              &kp MINUS
+&kp ESCAPE      &kp Q              &kp W                 &kp E            &kp R            &kp T   &none                                                                               &none      &kp Y   &kp U             &kp I             &kp O                 &kp SEMI            &kp BSLH
+&kp TAB         &hml LEFT_SHIFT A  &hml LEFT_CONTROL S   &hml LEFT_ALT D  &hml LEFT_GUI F  &kp G   &none     &kp LEFT_CONTROL  &kp LALT              &kp RIGHT_CONTROL  &kp RIGHT_GUI  &none      &kp H   &hmr RIGHT_GUI J  &hmr RIGHT_ALT K  &hmr RIGHT_CONTROL L  &hmr RIGHT_SHIFT P  &kp SQT
+&kp LEFT_SHIFT  &kp Z              &kp X                 &momonum 1 C     &kp V            &kp B                               &kp HOME              &kp PG_UP                                    &kp N   &kp M             &kp COMMA         &kp DOT               &kp FSLH            &kp RSHFT
+&mo 4           &kp GRAVE          &kp LS(LEFT_COMMAND)  &kp LEFT         &kp RIGHT                &kp BSPC  &kp TAB           &kp LEFT_COMMAND      &kp PG_DN          &kp ENTER      &kp SPACE          &kp UP            &kp DOWN          &kp LBKT              &kp RBKT            &mo 2
             >;
         };
 
