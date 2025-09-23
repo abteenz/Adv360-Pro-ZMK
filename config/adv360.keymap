@@ -160,7 +160,7 @@
 
         quote {
             bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <33 40>;
+            key-positions = <50 55>;
         };
 
         singlequote {
