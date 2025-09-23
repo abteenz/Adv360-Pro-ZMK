@@ -266,11 +266,11 @@
 
         Mouse {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                        &trans          &trans          &trans              &trans              &trans              &trans           &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                        &trans          &trans          &kp UP_ARROW        &mmv MOVE_UP        &kp DOWN_ARROW      &trans           &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans         &trans      &trans  &trans        &trans          &msc SCRL_LEFT  &mmv MOVE_LEFT      &mmv MOVE_DOWN      &mmv MOVE_RIGHT     &msc SCRL_RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                              &trans      &trans                                &trans          &mouse_clicks LCLK  &mouse_clicks MCLK  &mouse_clicks RCLK  &trans           &trans
-&trans  &trans  &trans  &trans  &trans          &kp PAGE_UP  &kp PAGE_DOWN  &none       &none   &msc SCRL_UP  &msc SCRL_DOWN                  &trans              &trans              &trans              &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                        &trans          &trans          &trans          &trans          &trans           &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                                        &trans          &trans          &kp UP_ARROW    &mmv MOVE_UP    &kp DOWN_ARROW   &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans       &trans         &trans      &trans  &trans        &trans          &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans      &trans                                &trans          &mkp LCLK       &mkp MCLK       &mkp RCLK        &trans           &trans
+&trans  &trans  &trans  &trans  &trans          &kp PAGE_UP  &kp PAGE_DOWN  &none       &none   &msc SCRL_UP  &msc SCRL_DOWN                  &trans          &trans          &trans           &trans           &trans
             >;
         };
 
