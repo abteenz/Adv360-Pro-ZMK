@@ -224,7 +224,7 @@
         paninside: paninside {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(P) &kp R &kp S &kp LS(S) &kp T &kp U &kp D &kp I &kp O &kp N2 &kp N0 &kp EXCL &kp N2>;
+            bindings = <&kp LS(P) &kp R &kp S &kp LS(D) &kp LS(G) &kp LS(T) &kp NUMBER_2 &kp N0 &kp EXCLAMATION &kp N9 &kp LS(G) &kp O &kp L &kp D &kp LS(T) &kp AT_SIGN &kp P>;
             label = "PANINSIDE";
         };
     };
